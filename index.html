@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sauer 3d | google webGL Augmented Reality mit einem photogrammetrieschen Objekt-Scans mit Agisoft Photoscan</title>
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+	<link type="text/css" href="styles.css" rel="stylesheet">
+	
+  </head>
+  <body>
+    <!-- Sichtbarer Dokumentinhalt im body -->
+    <div class="wrapper">
+		<div id="demo-container" class="demo">
+			<model-viewer class="demo" width="100vw" src="Ammonit_highpoly.glb" ar camera-controls alt="An Ammonit scannend with Agisoft-Photoscan" environment-image="studio_small_09_1k.hdr" xr-environment auto-rotateshadow-intensity="1" shadow-softness="1"></model-viewer>
+		</div>
+		<div class="textinfo">
+			<h1>Ammonit.</h1>
+			<p>Ein Test eines photogrammetrieschen Objekt-Scans mit Agisoft Photoscan.<br>
+			In <a href="higpoly.html">Highpoly</a> und <a href="index.html">LowPoly</a></p>
+			<p>Und hier ein Photo des Originals:<br>
+			<img src="original.jpg" alt="original" width="500" height="auto"></p>
+		</div>
+	</div>
+  </body>
+</html>
